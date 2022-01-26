@@ -1,3 +1,3 @@
-let numero = prompt("Ingrese numero")
-var operacion = numerp * 2
+var input = prompt("Ingrese numero")
+var operacion = input * 2
 console.log(operacion) 
