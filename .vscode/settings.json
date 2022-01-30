@@ -3,6 +3,7 @@
         "Ingrese",
         "numero",
         "operacion",
-        "resta"
+        "resta",
+        "texto"
     ]
 }
