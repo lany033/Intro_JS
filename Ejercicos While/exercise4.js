@@ -1,8 +1,8 @@
 var letrPa
 var arreglo = []
-var tam
-var texto
-var i = 0
+var tam = 0
+var texto = ""
+let i = 0
 
 while (!(letrPa=="")){
     letrPa = prompt("Introducir letras o palabras, NO escribir para terminar: ")
@@ -10,13 +10,12 @@ while (!(letrPa=="")){
     tam = arreglo.length
     
 }
-console.log(tam)
 
 
 while(i < tam){
     i++
-    texto += arreglo[i]
+    texto += arreglo[i-1]
     
 }
 
-console.log("Palabras en arreglo: "+ texto)
+alert("Palabras en arreglo: "+ texto)
