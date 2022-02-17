@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.F Bank</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="cajero.js"></script>
+</head>
+<body>
+    <!-- Pantalla principal -->
+    <section>
+        <div class="borde_principal">
+            <div class="login">
+                <!-- Formulario -->
+                <div class="formulario">
+                    <div class="form_login">
+                        <form id="forms">
+                            <div class="caja_login">
+                                <input type="text" name="username" id="user" class="usuario" placeholder="Inserte Usuario"><br>
+                            </div>
+                            <div class="caja_pass">
+                                <input type="password" name="password" id="pass" class="contraseña" placeholder="Password"><br>
+                            </div>
+                        </form>
+                    </div>
+                        
+                    <div class="ingresar">
+                        <button class="boton" type="button" id="button" value="Ingresar" onclick="onButtonClick()">Ingresar</button>
+                    </div>
+                </div>
+                <!-- Fin Formulario -->
+                <!-- Registro -->
+                <div class="registro">
+                   <div>
+                       <a href="/Proyecto_Final/index.html">
+                           <p>Registro</p>
+                       </a>
+                   </div>
+                   <div>
+                    <a href="/Proyecto_Final/index.html">
+                        <p>Olvide mi clave web</p>
+                    </a>
+                   </div>
+                   <div>
+                    <a href="/Proyecto_Final/index.html">
+                        <p>Ayuda</p>
+                    </a>
+                   </div> 
+                </div>
+            <!-- Fin Registro -->
+           
+            </div>
+             <!-- CAJERO -->
+            <div class="cajero">
+               <div class="caja1">
+                   <div>Bienvenido <span id="bienvenido"></span></div>
+                   <div class="logo">DEV.F.: Bank</div>
+               </div>
+               <div class="saldo">
+                   <div >
+                    <button class="boton" type="button" id="saldo" value="Ver Saldo" onclick="onSaldoclick()">Ver Saldo</button>
+                   </div>
+                   <span id="saldoActual"></span>
+                </div>
+
+               <div class="deposito">
+                   <div >
+                    <button class="boton" type="button" id="buttondeposito" value="Depositar" onclick="onDepositoclick()">Depositar</button>
+                   </div>
+                    <form>
+                        <input type="text" name="depot" id="deposito" class="deposito" placeholder="Inserte deposito"><br>
+                    </form>
+               </div>
+               <div class="retiro">
+                   <div>
+                    <button class="boton" type="button" id="buttonretiro" value="Retirar" onclick="onRetiroclick()">Retirar</button>
+                   </div>
+                    
+                    <form>
+                        <input type="text" name="retir" id="retirar" class="retirar" placeholder="Inserte monto de retiro"><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- Fin Pantalla principal -->  
+  
+    
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <div class="derechos">
+            <p>© Copyright 2019 - Todos los derechos reservados
+            </p>
+        </div>
+        <div class="redes_sociales">
+            <img src="./img/Iconos.PNG" alt="iconos">
+        </div>
+        <div class="iconos">
+            <img src="./img/libro.PNG" alt="">
+        </div>
+    </footer>
+    
+</body>
+</html>
